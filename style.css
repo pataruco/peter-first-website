@@ -5,6 +5,44 @@
 body {
   font-size: 100%;
   font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem;
+  align-items: center;
+
+  h1 {
+    margin: 0;
+  }
+
+  button {
+    appearance: none;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid orange;
+    background: white;
+    color: orange;
+    box-shadow: 1px 1px 0 1px orange;
+
+    &:active {
+      box-shadow: none;
+      transform: translate(1px, 1px);
+    }
+  }
+}
+
+main {
+  flex: 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 h1 {
@@ -12,7 +50,7 @@ h1 {
 }
 
 .grid {
-  max-width: 50vw;
+  width: 50vw;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -24,7 +62,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 10rem;
+    font-size: 9vw;
   }
 }
 
@@ -43,27 +81,18 @@ div[data-cell='5'] {
   border-bottom: 2px solid magenta;
 }
 
-menu {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-direction: column;
-  width: 16rem;
-  position: fixed;
-}
-
-button {
-  appearance: none;
-  font-size: 1.5rem;
-  padding: 0.5rem 1rem;
-  border: 2px solid orange;
-  background: white;
-  color: orange;
-}
-
 output {
-  font-size: 4rem;
+  font-size: 4vw;
   text-align: center;
   font-weight: bold;
+  color: orange;
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+footer {
+  text-align: center;
   color: orange;
 }
