@@ -21,6 +21,10 @@ h1 {
     flex: 1 0 33%;
     padding: 1rem;
     aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
   }
 }
 
@@ -37,4 +41,29 @@ div[data-cell='3'],
 div[data-cell='5'] {
   border-top: 2px solid cyan;
   border-bottom: 2px solid magenta;
+}
+
+menu {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-direction: column;
+  width: 16rem;
+  position: fixed;
+}
+
+button {
+  appearance: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid orange;
+  background: white;
+  color: orange;
+}
+
+output {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: bold;
+  color: orange;
 }
