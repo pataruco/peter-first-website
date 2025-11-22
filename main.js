@@ -41,7 +41,6 @@ function checkWin() {
 			cells[a].textContent === cells[c].textContent
 		) {
 			anounceWinner(cells[a].textContent);
-			// alert(`${cells[a].textContent} wins!`);
 			return;
 		}
 	}
